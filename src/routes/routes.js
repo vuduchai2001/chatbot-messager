@@ -1,7 +1,7 @@
-import express from "express";
-import homeController from "../controllers/home.controller";
+const express = require("express");
+const homeController = require("../controllers/home.controller.js");
 
-let router = express?.Router();
+let router = express.Router();
 
 let initRoutes = (app) => {
   router.get("/", (req, res) => {

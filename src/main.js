@@ -1,8 +1,8 @@
-import express from "express";
-import bodyParser from "body-parser";
-import viewEngine from "./configs/viewEngine";
-import routes from "./routes/routes";
-import { config } from "dotenv";
+const express = require("express");
+const bodyParser = require("body-parser");
+const viewEngine = require("./configs/viewEngine.js");
+const routes = require("./routes/routes.js");
+require("dotenv").config();
 
 const app = express();
 
@@ -14,8 +14,6 @@ routes(app);
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
-
-config();
 
 const port = process.env.PORT || 1337;
 
