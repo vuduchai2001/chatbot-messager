@@ -6,14 +6,15 @@ require("dotenv").config();
 
 const app = express();
 
-//config view engine
-viewEngine(app);
-
-//config routes
-routes(app);
-
+// Set up body parser middleware before routes
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
+
+// Config view engine
+viewEngine(app);
+
+// Config routes
+routes(app);
 
 const port = process.env.PORT || 1337;
 

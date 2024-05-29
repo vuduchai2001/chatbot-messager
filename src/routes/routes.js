@@ -5,7 +5,7 @@ let router = express.Router();
 
 let initRoutes = (app) => {
   router.get("/", (req, res) => {
-    return res.send("Hello world!");
+    return res.send("PONG PONG!");
   });
 
   //webhooks
