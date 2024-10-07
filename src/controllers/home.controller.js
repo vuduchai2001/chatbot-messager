@@ -46,7 +46,7 @@ const getWebhook = (req, res) => {
 
 const handleMessage = async (sender_psid, received_message) => {
   let messageText = received_message.text?.toLowerCase().replace(/\s+/g, "");
-  let response = { text: "Hải dương 34 chào anh em" };
+  let response = { text: "Chào anh em" };
 
   console.log(
     "------------------------------------------------------------------------------------------------------------------------------------------------------"
