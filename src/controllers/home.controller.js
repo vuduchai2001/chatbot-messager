@@ -46,7 +46,7 @@ const getWebhook = (req, res) => {
 
 const handleMessage = async (sender_psid, received_message) => {
   let messageText = received_message.text?.toLowerCase().replace(/\s+/g, "");
-  let response = { text: "Chào anh em" };
+  let response = { text: "Hello! I am a koate, a chatbot very cool" };
 
   console.log(
     "------------------------------------------------------------------------------------------------------------------------------------------------------"
